@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CarStore</string>
+    <string name="edit_dias">Digite os dias de locação</string>
+    <string name="button_send">Calcular</string>
+    <string name="action_settings">Settings</string>
+    <string name="radio_popular">Popular (Gol, Pálio): R$55</string>
+    <string name="radio_medio">Médio (Prisma, Voyage): R$85</string>
+    <string name="radio_grande">Grande (Corolla ou Civic): R$110</string>
+    <string name="checkbox_arCondicionado">Ar Condicionado: R$25</string>
+    <string name="checkbox_airBag">Air bag:R$20</string>
+    <string name="checkbox_freioABS">Freio ABS: R$15</string>
+    <string name="radio_somPadrao">Som padrão: R$10</string>
+    <string name="radio_somEspecial">Som especial: R$30</string>
+
+    <string name="textViewDescontos">6 à 10 dias de locação – desconto de 10% e acima de 10 dias – desconto de 20%</string>
+    <string name="textViewTipos">Tipo: </string>
+    <string name="textViewOpcionais">Opcionais: </string>
+</resources>

@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linear">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/textViewTipos"
+        android:id="@+id/textViewTipos" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:checkedButton="@+id/radio_popular">
+        <RadioButton android:id="@+id/radio_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_popular"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_medio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_medio"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_grande"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_grande"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/textViewOpcionais"
+        android:id="@+id/textViewOpcionais"/>
+
+    <CheckBox android:id="@+id/checkbox_arCondicionado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_arCondicionado"
+        android:onClick="onCheckboxClicked"/>
+    <CheckBox android:id="@+id/checkbox_airBag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_airBag"
+        android:onClick="onCheckboxClicked"/>
+    <CheckBox android:id="@+id/checkbox_freioABS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_freioABS"
+        android:onClick="onCheckboxClicked"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/radio_somPadrao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_somPadrao"
+            android:onClick="onRadioButton2Clicked"/>
+        <RadioButton android:id="@+id/radio_somEspecial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_somEspecial"
+            android:onClick="onRadioButton2Clicked"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/textViewDescontos"
+        android:id="@+id/textViewDescontos" />
+
+    <EditText
+        android:id="@+id/edit_dias"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_dias"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_send"
+        android:id="@+id/button_send"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClickButtonCalcular"/>/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Total Bruto: R$ 0,00"
+        android:id="@+id/textViewTotalBruto" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Total Descontos: R$ 0,00"
+        android:id="@+id/textViewTotalDescontos" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Total Liquido: R$ 0,00"
+        android:id="@+id/textViewTotalLiquido" />
+
+</LinearLayout>

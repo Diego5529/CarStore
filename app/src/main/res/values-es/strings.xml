@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alquiler de coches</string>
+    <string name="edit_dias">Introduzca los días de alquiler</string>
+    <string name="button_send">Calcular</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="radio_popular">Popular (Gol, Pálio): R$55</string>
+    <string name="radio_medio">Promedio (Prisma, Voyage): R$85</string>
+    <string name="radio_grande">Gran (Corolla o Civic): R$110</string>
+    <string name="checkbox_arCondicionado">Aire acondicionado: R$25</string>
+    <string name="checkbox_airBag">Air bag:R$20</string>
+    <string name="checkbox_freioABS">Freno ABS: R$15</string>
+    <string name="radio_somPadrao">Sonido defecto: R$10</string>
+    <string name="radio_somEspecial">Sonido Especial.: R$30</string>
+
+    <string name="textViewDescontos">6 a 10 días contrato es 10 % / por encima de 10 días es del 20%</string>
+    <string name="textViewTipos">Tipos: </string>
+    <string name="textViewOpcionais">Optativo: </string>
+    <string name="titleMessage">Campos vacío</string>
+    <string name="messageError">Debe completar el campo DÍAS para calcular el total.</string>
+
+    <string name="total_bruto">Bruto total de: R$ %1$s </string>
+    <string name="total_liquido">Liquido total de: R$ %1$s</string>
+    <string name="total_descontos">El Total de Descontos R$ %1$s - Porc. Desc.: %2$s</string>
+</resources>

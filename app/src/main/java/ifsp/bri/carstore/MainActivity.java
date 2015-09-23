@@ -1,6 +1,7 @@
 package ifsp.bri.carstore;
 
 import android.app.AlertDialog;
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -35,6 +36,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView textViewBruto = (TextView) findViewById(R.id.textViewTotalBruto);
+        textViewBruto.setText("");
+
+        TextView textViewDesconto = (TextView) findViewById(R.id.textViewTotalDescontos);
+        textViewDesconto.setText("");
+
+        TextView textViewLiquido = (TextView) findViewById(R.id.textViewTotalLiquido);
+        textViewLiquido.setText("");
 
         Log.d(TAG, ">>>>>>>onCreate()<<<<<<<<<");
     }
@@ -131,9 +141,12 @@ public class MainActivity extends AppCompatActivity {
         }
         else
         {
+            String titleMessage = getResources().getString(R.string.titleMessage);
+            String messageError = getResources().getString(R.string.messageError);
+
             AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
-            alertDialog.setTitle("Campos não Preenchidos");
-            alertDialog.setMessage("Você deve preencher o campo de DIAS para calcular o total.");
+            alertDialog.setTitle(titleMessage);
+            alertDialog.setMessage(messageError);
             alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                     new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
@@ -187,14 +200,21 @@ public class MainActivity extends AppCompatActivity {
         //Resultados
         totalLiquido = calculaDescontos(totalSelecionado);
 
+        Resources res = getResources();
+        String textTotalBruto = String.format(res.getString(R.string.total_bruto),
+                totalBruto);
         TextView textViewBruto = (TextView) findViewById(R.id.textViewTotalBruto);
-        textViewBruto.setText("Total Bruto R$" + totalBruto);
+        textViewBruto.setText(textTotalBruto);
 
+        String textTotalDescontos = String.format(res.getString(R.string.total_descontos),
+                totalDescontos, percDesconto);
         TextView textViewDesconto = (TextView) findViewById(R.id.textViewTotalDescontos);
-        textViewDesconto.setText("Total Desconto R$" + totalDescontos + " - Perc. Desc.:" + percDesconto+"%");
+        textViewDesconto.setText(textTotalDescontos);
 
+        String textTotalLiquido = String.format(res.getString(R.string.total_liquido),
+                totalLiquido);
         TextView textViewLiquido = (TextView) findViewById(R.id.textViewTotalLiquido);
-        textViewLiquido.setText("Total Liquido R$" + totalLiquido);
+        textViewLiquido.setText(textTotalLiquido);
 
         //Zerando variavels
         dias = 0;

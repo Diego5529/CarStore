@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CarStore</string>
-    <string name="edit_dias">Digite os dias de locação</string>
-    <string name="button_send">Calcular</string>
+    <string name="edit_dias">Enter day rental</string>
+    <string name="button_send">Calculate</string>
     <string name="action_settings">Settings</string>
     <string name="radio_popular">Popular (Gol, Pálio): R$55</string>
-    <string name="radio_medio">Médio (Prisma, Voyage): R$85</string>
-    <string name="radio_grande">Grande (Corolla ou Civic): R$110</string>
-    <string name="checkbox_arCondicionado">Ar Condicionado: R$25</string>
-    <string name="checkbox_airBag">Air bag:R$20</string>
-    <string name="checkbox_freioABS">Freio ABS: R$15</string>
-    <string name="radio_somPadrao">Som padrão: R$10</string>
-    <string name="radio_somEspecial">Som especial: R$30</string>
+    <string name="radio_medio">Medium (Prisma, Voyage): R$85</string>
+    <string name="radio_grande">Big (Corolla or Civic): R$110</string>
+    <string name="checkbox_arCondicionado">Air Conditioning: R$25</string>
+    <string name="checkbox_airBag">Air Bag:R$20</string>
+    <string name="checkbox_freioABS">ABS Break: R$15</string>
+    <string name="radio_somPadrao">Default Sound: R$10</string>
+    <string name="radio_somEspecial">Special Sound: R$30</string>
 
-    <string name="textViewDescontos">6 à 10 dias de locação – desconto de 10% e acima de 10 dias – desconto de 20%</string>
-    <string name="textViewTipos">Tipo: </string>
-    <string name="textViewOpcionais">Opcionais: </string>
+    <string name="textViewDescontos">6 to 10 days lease 10% / above 10 days is 20 %</string>
+    <string name="textViewTipos">Type: </string>
+    <string name="textViewOpcionais">Optionals: </string>
+    <string name="titleMessage">Fields Filled not</string>
+    <string name="messageError">You must complete the DAYS field to calculate the total.</string>
+    <string name="total_bruto">Gross Total: R$ %1$s </string>
+    <string name="total_liquido">Total liquid: R$ %1$s</string>
+    <string name="total_descontos">Total Descontos: R$ %1$s Perc. of Desc.: %2$s</string>
 </resources>
